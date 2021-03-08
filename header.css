@@ -1,0 +1,76 @@
+header{
+    padding: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+/*Logo*/
+#logo{
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    flex-basis: 200px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+#logo>span{
+    cursor: pointer;
+}
+
+/*Menu*/
+#menu{
+    position: relative;
+    width: fit-content;
+
+    flex-basis: 350px;
+    flex-shrink: 1;
+    flex-grow: 1;
+
+    padding: 5px;
+}
+#menuMouse{
+    width: fit-content;
+}
+.menuBtn{
+    font-size: 14px;
+    width: 70px;
+
+    text-align: left;
+}
+#cursorBar{
+    position: absolute;
+    left:0px;
+
+    width: 0px;
+    height: 3px;
+
+    background-color: white;
+}
+
+/*SubMenu*/
+#subMenu{
+    flex-basis: 250px;   
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.subMenuBtn{
+    font-size:12px;
+
+    box-sizing: border-box;
+}
+#subMenu span{
+    font-weight: 400;
+    margin-left: 3px;
+}
+#subMenu > span:nth-last-child(3){
+    font-size: 1px;
+    font-weight: 0;
+    margin:0 4px 0 7px;
+}
+#subMenu span:last-child{
+    font-size: 0.1px;
+    font-weight: 0;
+}
